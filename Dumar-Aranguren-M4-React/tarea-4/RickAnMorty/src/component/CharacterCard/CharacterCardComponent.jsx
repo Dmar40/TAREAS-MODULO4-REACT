@@ -1,28 +1,31 @@
 import React from 'react';
-import { Imagen } from '../imagen/imagenComponent';
-import { Titulo } from '../Titulo/TituloComponent';
-import { Details } from '../details/DetailsComponent';
+import './App.css'
+import { RAMCharacterCardComponent } from "../component/RickAndMortyCharacterCard/RAMCharacterCardComponent";
+
+
+
     
 
       const CharacterCardComponent =(props) => {
-       
+      
         return (
-          <div>
-            <div className='imagen'>
-            <Imagen url={props.imagen}/>
-            </div>
-            <div className='circle'>
-              {props.status}
-            </div>
-            <div className='content'>
-             <div className='title'>
-              < Titulo text={props.nombre}/>
-             </div>
-            <Details genre={props.genre} status={props.status}/>
-            </div>
-            
+          <div class='contenedor'>
+          <div className='card'>
+            <RAMCharacterCardComponent id={1}/>
           </div>
-        );
+          <div className='card'>
+            <RAMCharacterCardComponent id={2}/>
+          </div>
+          <div className='card'>
+            <RAMCharacterCardComponent id={3}/>
+          </div>
+          <div className='card'>
+            <RAMCharacterCardComponent id={10}/>
+          </div>
+            
+            
+          
+          </div>
+        )
       }
-
       export default CharacterCard;

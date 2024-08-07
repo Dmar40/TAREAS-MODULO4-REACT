@@ -1,33 +1,48 @@
 import React from 'react';
-import './App.css'
-import { RAMCharacterCardComponent } from "../component/RickAndMortyCharacterCard/RAMCharacterCardComponent";
+import "./App.css";
 
 
-
-
-
+import { Imagen } from './component/imagen/imagenComponent';
+import { Titulo } from './component/Titulo/TituloComponent';
+import Details from './component/details/DetailsComponent';
 
 function App() {
 
+     
   return (
-    <div class='contenedor'>
-    <div className='card'>
-      <RAMCharacterCardComponent id={1}/>
-    </div>
-    <div className='card'>
-      <RAMCharacterCardComponent id={2}/>
-    </div>
-    <div className='card'>
-      <RAMCharacterCardComponent id={3}/>
-    </div>
-    <div className='card'>
-      <RAMCharacterCardComponent id={10}/>
-    </div>
+    <div>
+      <div className='imagen'>
+      <Imagen url={props.imagen}/>
+      </div>
+      <div className='circle'>
+        {props.status}
+      </div>
+      <div className='content'>
+       <div className='title'>
+        <Titulo text={props.nombre}/>
+       </div>
+      <Details genre={props.genre} status={props.status}/>
+      </div>
       
-      
-    
     </div>
-  )
+  );
 }
 
+
+
+// function App() {
+
+//   return (
+//     <div className='card'>
+//       <Titulo Title='Vegeta' />
+//       <Imagen />
+//       <Details genre= 'Masculino' status= 'Vivo'/>
+      
+//     </div>
+//   );
+// }
+
 export default App
+
+
+

@@ -33,10 +33,67 @@
   }
 }
 
-.card {
-  padding: 2em;
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra verticalmente */
 }
 
-.read-the-docs {
-  color: #888;
+
+.img{
+  border: 2px solid black;
+  position:relative;
+  bottom:30px ;
+  max-width: 100%;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
+
+.card {
+  
+  border: 6px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px black;
+  max-width: 300px;
+  max-height: 700px;
+  margin: 0px;
+  background-color: #3cf517;
+  transition: box-shadow 0.10s ease;
+
+
+ 
+}
+
+body {
+  background-color: #1c1c1c; /* Color de fondo oscuro */
+}
+
+h5{
+  top: 500px;
+  position: relative;
+  border-radius: 10px solid black;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  color: #ffcc00; /* Amarillo */
+  margin:0px; /* Elimina el margen predeterminado */
+  padding: 0px;
+  
+
+}
+
+.details {
+  position: relative;
+  bottom: -100px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #3d2bdf; /* Blanco */
+}
+
+.details {
+  background-image: url('textura.png'); /* Agrega una textura de fondo */
+  background-size: cover;
+  padding: 0px;
+}
+
