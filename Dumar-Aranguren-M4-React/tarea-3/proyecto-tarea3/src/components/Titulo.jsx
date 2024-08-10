@@ -1,24 +1,15 @@
 import React from 'react'
 
 
-
-
-
 export const Titulo = (props) => {
     console.log(props,'props Titulo');
   return (
     <div>
-        <h5>
-          
-
-            {props.Title}
+           <h2>BRAGON BALL</h2>
          
             
-        </h5>
+         
         
-          
-        
-
     </div>
   )
 }

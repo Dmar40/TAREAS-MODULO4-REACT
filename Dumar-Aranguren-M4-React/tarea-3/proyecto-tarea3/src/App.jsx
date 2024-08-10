@@ -1,18 +1,26 @@
 
 import './App.css'
 import {Titulo}  from './components/Titulo';
-import {Imagen} from './components/Imagen';
 import {Details} from './components/Details';
+import Imagen from './components/Imagen';
 
 
 function App() {
 
   return (
+  
+    <div className='container'>
+       <Titulo Title= 'title' />
     <div className='card'>
-      <Titulo Title='Vegeta' />
-      <Imagen />
-      <Details genre= 'Masculino' status= 'Vivo'/>
+      <Imagen/>
       
+       <div className='circle'>
+      <h5> Vegeta</h5>
+      </div>
+      <Details genre= 'Masculino' status= 'Vivo'/>
+    
+      
+    </div>
     </div>
   );
 }
