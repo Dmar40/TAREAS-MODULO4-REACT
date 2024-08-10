@@ -1,20 +1,21 @@
 
 import React from 'react'
 
-      export const Details = (props) => {
-      
-        return (
-          <div  className='details'>
-              <p>
-                <b>Genero:</b>  {props.genre} 
-                <br/>
-                <b>Estado:</b> {props.status}
-              </p>
-          </div>
-        );
-      }
+const Details = (props) => {
+  console.log(props, "props Details");
+
+  return (
+    <div>
+      <div className='Details'>
+
+        {props.species}
+
+      </div>
+    </div>
+  )
+}
 
 
-      
+export default Details
 
 
