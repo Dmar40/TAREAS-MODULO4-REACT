@@ -20,11 +20,11 @@ const CharacterCard = (props) => {
                 </div>
            
                 <div >
-                    <Details species={props.genre} />
+                    <Details species={props.species} />
                 </div>
             
         </div>
     );
 }
 
-export default CharacterCard
+export default CharacterCard;

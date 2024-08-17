@@ -61,13 +61,47 @@
 }
 
 h1{
-  
-  font-family: fantasy;
+  font-family:'Candy';
   font-size: 22px;
   color: #83df0b; 
   text-align: center;
   overflow: hidden;
   box-shadow: 0 4px 8px black;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+li{
+  font-family: fantasy;
+  font-size: 22px;
+  width: 100px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgb(129, 34, 34);
+}
+
+ul.EpisodePage{
+  display: flex;
+  flex-direction: row;
+  justify-content:center ;
+  flex-wrap: wrap;
+  gap: 20px;
+ 
+}
+.Epi{
+  flex-direction: column;
+  align-items: center ;
+  border: 10px solid rgb(233, 18, 18);
+  text-align:center;
+  width: 180px;
+  height: 180px;
+  color: #fafcf9;
+  background-color: darkmagenta;
+
 }
 
 .Details {
@@ -126,3 +160,42 @@ button {
   border-radius: 8px; /* Bordes redondeados */
   transition-duration: 0.4s; /* Transición suave */
 }
+.intro-container {
+  background-color: #2c3e50;
+  background-image: url('path-to-your-background-image.jpg'); /* Aquí puedes poner la URL de tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.title {
+  font-size: 4rem;
+  font-family: 'Rick and Morty Font', sans-serif; /* Asegúrate de tener la fuente correcta */
+  color: #00ff00; /* Color verde brillante */
+  text-shadow: 0 0 10px #00ff00;
+}
+
+.navbar {
+  margin-top: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #00ff00;
+  
+}
+
+
+

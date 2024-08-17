@@ -8,10 +8,7 @@ const Titulo = (props) => {
     <div>
         <div className='Titulo'>
           {props.text}
-          
-
         </div>
-         
     </div>
   )
 }

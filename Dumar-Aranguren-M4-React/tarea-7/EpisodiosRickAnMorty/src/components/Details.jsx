@@ -1,19 +1,17 @@
 
-import React from 'react'
+import React from 'react';
 
 const Details = (props) => {
-  console.log(props, "props Details");
+  console.log(props, 'props');
 
   return (
     <div>
       <div className='Details'>
-
-        {props.species}
-
+        <p> {props.species}</p>
       </div>
     </div>
   )
-}
+};
 
 
 export default Details

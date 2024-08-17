@@ -4,23 +4,15 @@ import { Link } from 'react-router-dom';
 function HomePage() {
     return (
         <div>
-            <h1>Bienvenido a la página de Rick and Morty</h1>
-            <h3>Enlaces rápidos</h3>
-            <Link to="/characters">
-                <p>
-                    <b>
-                        Ir a personajes
-                    </b>
-                </p>
-            </Link><br />
-            <Link to="/episodes">
-                <p>
-                    <b>
-                        Ir a episodios
-                    </b>
-                </p>
-
-            </Link>
+            <h1 className='drip-october'>Bienvenido a la página de Rick and Morty</h1>
+            <nav className='HomePage'>
+                <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/characters">Characters</Link></li>
+                    <li><Link to="/locations">Locations</Link></li>
+                    <li><Link to="/episodes">Episodes</Link></li>
+                </ul>
+            </nav>
         </div>
     );
 }

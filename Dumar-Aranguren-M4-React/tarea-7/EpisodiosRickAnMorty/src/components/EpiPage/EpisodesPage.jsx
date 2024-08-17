@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import HomePage from '../Home/HomePage';
 
 function EpisodesPage() {
   const [episodes, setEpisodes] = useState([]);
@@ -10,6 +11,7 @@ function EpisodesPage() {
       .then(data => {
         setEpisodes(data.results);
         setLoading(false);
+        console.log(data );
       })
       .catch(error => console.error('Error fetching episodes:', error));
   }, []);
@@ -19,11 +21,20 @@ function EpisodesPage() {
   }
 
   return (
+    
     <div>
+       <HomePage/>
+       
       <h1>Episodes</h1>
-      <ul>
+      <ul className='EpisodePage'>
+      
         {episodes.map(episode => (
-          <li key={episode.id}>{episode.name}</li>
+          <li className='Epi' 
+          key={episode.id}> <br />
+            {episode.name} <br /> 
+            {episode.episode} <br />
+            {episode.air_date}
+          </li>
         ))}
       </ul>
     </div>

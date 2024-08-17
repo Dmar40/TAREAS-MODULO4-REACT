@@ -14,7 +14,7 @@ const RickAndMortyCharacterCard = () => {
     fetch("https://rickandmortyapi.com/api/character/?page=" + buttonCard)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        console.log(data,"soy data");
         setCharactersList(data.results);
 
 
@@ -43,7 +43,7 @@ const RickAndMortyCharacterCard = () => {
 
               name={characters.name}
               image={characters.image}
-              species={characters.genre}
+              species={characters.species}
               status={characters.status}
             />
           </Link>
